@@ -1,0 +1,81 @@
+<!--To Check if the code is working open the network tab / send form action to https://httpbin.org/get to get proper response-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Forms in HTML</title>
+    </head>
+    <body>
+        <section>
+            <h2>Contact Me Page</h2>
+            <p>Please fill in your details so that we can Contact you</p>
+            
+            <!--Creating Forms in HTML and sending data via GET method-->
+            <!--Data sent via body in form-->
+            <form action="https://httpbin.org/post" method="post">
+
+                <!--Text Inputs || id should match label's for and name will be the variable in which the response will be sent-->
+                <label for="firstName">Enter Your First Name: </label>
+                <input type="text" id="firstName" name="firstName">
+                <br><br>
+
+                <label for="lastName">Enter your Last Name: </label>
+                <input type="text" id="lastName" name="lastName">
+                <br><br>
+
+                <label for="email">Enter Email: </label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <!--Radio Inputs || name should be same for all inputs and values attribute should be added as it's the actual value that is being passed when the option is selected-->
+                Please Select Gender:
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <!--Checkbox Inputs || name should be same for all inputs and values attribute should be added as it's the actual value that is being passed when the option is selected-->
+                Please Select Languages Known: <br>
+                <input type="checkbox" id="html" name="language" value="HTML">
+                <label for="html">HTML</label>
+                <br>
+                <input type="checkbox" id="css" name="language" value="CSS">
+                <label for="css">CSS</label>
+                <br>
+                <input type="checkbox" id="javascript" name="language" value="Javascript">
+                <label for="javascript">Javascript</label>
+                <br>
+                <input type="checkbox" id="nodejs" name="language" value="NodeJS">
+                <label for="nodejs">NodeJS</label>
+                <br>
+                <input type="checkbox" id="reactjs" name="language" value="ReactJS">
+                <label for="reactjs">ReactJS</label>
+                <br><br>
+
+                <!--File type for uploading the files in the documents-->
+                <label for="pdfFile">Select PDF: </label>
+                <input type="file" id="pdfFile" name="pdfFile">
+                <br><br>
+
+                <!--DataList with options for dropdown-->
+                <label for="exp">Enter Your Experience: </label>
+                <input list="exp" name="exp">
+                <datalist id="exp">
+                    <option value="one">
+                    <option value="two">
+                    <option value="three">
+                    <option value="three+">
+                </datalist>
+                <br><br>
+                
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                
+            </form>
+
+        </section>
+    </body>
+</html>
