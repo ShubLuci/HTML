@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shubham Cafe</title>
+        <link type="image/png" rel="icon" href="./img/icons8-cafe-100.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+            }
+            #menu {
+                display: flex;
+                align-items: center;
+            }
+            #menu article img {
+                width: 100%;
+                height: auto;
+            }
+            .menu-items {
+                margin-left: 20px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 60%;
+                background-color: #f9f9f9;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+                border: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <h1><img src="./img/coffee-cup.gif" alt="Coffee Animation" width="50"> Welcome to Shubham's Cafe</h1>
+        
+        <nav>
+            <a href="#aboutUs">About Us</a> |
+            <a href="#locations">Our Locations</a> |
+            <a href="#menu">Bestseller Menu</a> |
+            <a href="#contactUs">Contact Us</a> 
+        </nav>
+        <section id="aboutUs">
+            <hr>
+            <h2>About Us</h2>
+            <hr>
+            <article>
+                <b>Our mission: to inspire and nurture the human spirit – one person, one cup and one neighbourhood at a time.</b><br>
+                Here are the principles of how we live that every day:<br><br>
+            </article>
+            <article>
+                <b># Our Coffee</b>
+                <p>
+                    It has always been, and will always be, about quality. We’re passionate about ethically sourcing the finest coffee beans, roasting them with great care and improving the lives of people who grow them. We care deeply about all of this; our work is never done.
+                </p>
+            </article>
+            <article>
+                <b># Our Customers</b>
+                <p>
+                    When we are fully engaged, we connect with, laugh with and uplift the lives of our customers – even if just for a few moments. Sure, it starts with the promise of a perfectly made beverage, but our work goes far beyond that. It’s really about human connection.
+                </p>
+            </article>
+            <article>
+                <b># Our Stores</b>
+                <p>
+                    When our customers feel this sense of belonging, our stores become a haven, a break from the worries outside, a place where you can meet with friends. It’s about enjoyment at the speed of life – sometimes slow and savoured, sometimes faster. Always full of humanity.
+                </p>
+            </article>
+        </section>
+
+        
+        <section id="locations">
+            <hr>
+            <h2>Our Locations</h2>
+            <hr>
+            <br>
+            <article><i>Cafe Name</i>: Inorbit Cyberabad</article>
+            <article><i>Address</i>: Lower Ground Floor, Inorbit Mall Hyderabad, AP 500081</article>
+            <a href="mailto:shubham@cafe.com">Mail Us</a> |
+            <a href="tel:+91997">Call Us</a>
+            <br><br>
+
+            
+            <article><i>Cafe Name</i>: Gatchibowli</article>
+            <article><i>Address</i>: Gatchibowli Gardens, Hyderabad, Telangana-502003</article>
+            <a href="mailto:customer-care@cafe.com">Mail Us</a> |
+            <a href="tel:+917849">Call Us</a>
+            <br><br>
+        </section>
+        
+        <hr>
+        <h2>Bestseller Menu</h2>
+        <hr>
+        <section id="menu">
+            <article style="width: 30%;">
+                <img src="./img/food.png" alt="Man Pouring Coffee">
+            </article>
+            <article class="menu-items">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr. No.</th>
+                            <th>Item Name</th>
+                            <th>Description</th>
+                            <th>Calories</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pink Drink</td>
+                            <td>A vibrant mix of strawberry açaí and coconut flavors, bursting with fruity sweetness.</td>
+                            <td>127 kcal</td>
+                            <td>₹367</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cold Coffee</td>
+                            <td> Our signature rich in flavour espresso blended with delicate vanilla flavour and milk to create a perfect cold coffee delight. An all time favourite.</td>
+                            <td>354 kcal</td>
+                            <td>₹320</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Java Chip Frappuccino</td>
+                            <td>Mocha sauce  and Frappuccino® chips blended with with Frappuccino® roast coffee and milk and ice, then topped with whipped vanilla topping and mocha drizzle to bring you endless java joy.</td>
+                            <td>392 kcal</td>
+                            <td>₹388</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+
+        <section id="contactUs">
+            <hr>
+            <h2>Contact Us</h2>
+            <hr>
+            <form action="https://httpbin.org/post" method="post">
+                
+                <label for="email">1. Enter Your Email:&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="firstName">2. Enter Your First Name:&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="firstName" name="firstName">
+                <br><br>
+
+                <label for="lastName">3. Enter Your Last Name:&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="lastName" name="lastName">
+                <br><br>
+
+                <label for="drinkSelected">4. Please Select Drink Suggestion:&nbsp;&nbsp;&nbsp; </label>
+                <input list="drinkSelected" name="drinkSelected" required>
+                <datalist id="drinkSelected">
+                    <option value="Pink Drink">
+                    <option value="Cold Coffee">
+                    <option value="Java Chip Frappuccino">
+                </datalist>
+                <br><br>
+
+
+                <label for="comment">5. Comments:&nbsp;&nbsp;&nbsp;</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Enter your comments here" required></textarea>
+                <br><br>
+
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+                </textarea>
+                <br><br>
+            </form>
+        </section>
+    </body>
+</html>
